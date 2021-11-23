@@ -1,0 +1,15 @@
+> use assignments
+> show dbs
+> db.assignments.insert({first_name:"renu",last_name:"kote",email:"renuka_pw1_172@masai.school",gender:"Male",age:"21"})
+> db.assignments.find({}).pretty()
+> db.assignments.insertMany([{first_name:"mane",age:"21",email:"mane@gmail.com",gender:"female"},{first_name:"chandu",age:"21",email:"chandu@gmail.com",gender:"Male"},{first_name:"sarath",age:"21",email:"sarath@gmail.com",gender:"Male"}])
+> db.assignments.find({}).pretty()
+> db.assignments.findOne({age:"21"})
+> db.assignments.update({first_name:"shree"},{$set: {gender:"female"}})
+> db.assignments.updateMany({age:"21"},{$set: {age:"22"}})
+> db.assignments.remove({gender:"female"})
+> db.assignments.remove({gender:"Male"},2)
+> db.assignments.deleteOne({age:"22"})
+> db.assignments.deleteMany({age:"22"})
+> db.dropDatabase()
+
